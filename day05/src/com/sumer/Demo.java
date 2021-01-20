@@ -23,7 +23,7 @@ public class Demo {
 
         final int[] array = {1, 2, 3, 4, 5, 12, 13};
 
-        final String str = test06(array);
+        final String str = Demo.test06(array);
 
         System.out.println(str);
     }
@@ -37,7 +37,6 @@ public class Demo {
 
         System.out.println("我的年龄是: " + age);
 
-
     }
 
     public static void getMax(final int number1, final int number2) {
@@ -45,13 +44,11 @@ public class Demo {
         System.out.println("最大值是: " + (number1 > number2 ? number1 : number2));
     }
 
-
     public static void test03() {
         for (int i = 0; i < 10; i++) {
             System.out.println("123");
         }
     }
-
 
     public static void test04(final int n) {
         for (int i = 0; i < n; i++) {
@@ -59,8 +56,7 @@ public class Demo {
         }
     }
 
-
-    //方法重载(就是方法名相同 但是传入参数不同  根据传入的参数 选择对应的方法)
+    // 方法重载(就是方法名相同 但是传入参数不同 根据传入的参数 选择对应的方法)
     public static boolean test05(final int num1, final int num2) {
         System.out.println("int");
         return num1 == num2;
@@ -98,7 +94,7 @@ public class Demo {
         return arr;
     }
 
-    public static String test06(final int[] arr) {
+    private static String test06(final int[] arr) {
 
         String str = "[";
         for (int i = 0; i < arr.length; i++) {
